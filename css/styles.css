@@ -1,4 +1,5 @@
 /*
+
 black: #161616;
 red: #e01e3c;
 white: #ffffff;
@@ -32,3 +33,48 @@ button {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
 }
+header {
+    height: 80px;
+    background: #161616;
+}
+
+.hero {
+    height: 400px;
+    background: #e01e3c;
+}
+
+.product-lineup-container {
+    height: 400px;
+    background: #999;
+}
+
+.featured-product-container {
+    height: 400px;
+    background: #666;
+}
+
+.product-support-container {
+    height: 400px;
+    background: #222;
+}
+
+.subscription-container {
+    height: 400px;
+    background: #777;
+}
+
+footer {
+    height: 400px;
+    background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+/*  */
