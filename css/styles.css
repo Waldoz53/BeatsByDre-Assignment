@@ -1,4 +1,4 @@
-/*
+/**************************************
 
 black: #161616;
 red: #e01e3c;
@@ -7,7 +7,7 @@ white: #ffffff;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 
-*/
+**************************************/
 
 /*******************
 General styles
@@ -19,6 +19,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 70px;
+    font-weight: 900;
 }
 
 h2 {
@@ -33,14 +34,37 @@ p {
     font-family: sans-serif;
 }
 
-button {
+.button {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
+    background: #e01e3c;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin: 15px;
 }
 
-/*******************
+.red-button {
+    border: 2px solid #e01e3c;
+    background: #e01e3c;
+    color: white;
+}
+
+.light-button {
+    border: 2px solid #999;
+    background: transparent;
+    color: #161616;
+}
+
+.dark-button {
+    border: 2px solid #ffffff;
+    background: #222;
+    color: white;
+}
+/*************
 Header styles
-*******************/
+**************/
 
 header {
     height: 80px;
@@ -109,7 +133,7 @@ Mobile nav
     display: inline-block;
     margin-left: -4px;
     vertical-align: top;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .mobile-nav .logo-container {
@@ -138,10 +162,50 @@ Mobile nav
 Hero Styles
 ***********/
 .hero {
-    height: 400px;
-    background: #e01e3c;
+    height: calc(100vh - 80px);
+    background-image: url('../beats-assets/img/hero-large.jpg');
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    background-position: center;
 }
 
+.hero-text-container {
+    padding-top: 60vh;
+}
+
+.hero-text-container h1 {
+    margin-bottom: 10px;
+    font-size: 75px;
+}
+
+.hero-text-container p {
+    margin-bottom: 70px;
+    font-weight: 700;
+}
+
+.hero h1,
+.hero p {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: url('../beats-assets/img/hero-small.jpg');
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-text-container p {
+        margin-bottom: 35px;
+    }
+}
 /**************
 Product Lineup
 **************/
