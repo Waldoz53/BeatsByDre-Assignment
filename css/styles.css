@@ -10,7 +10,7 @@ font-family: 'Oswald', sans-serif;
 */
 
 /*******************
-general styles
+General styles
 *******************/
 
 h1, h2, h3 {
@@ -39,7 +39,7 @@ button {
 }
 
 /*******************
-header styles
+Header styles
 *******************/
 
 header {
@@ -55,7 +55,10 @@ header .logo {
     background-size: 40px;
 }
 
-header ul {
+/***********
+Desktop nav
+***********/
+.desktop-nav ul {
         float: right;
         margin-top: 10px;
         padding: 0;
@@ -63,21 +66,21 @@ header ul {
         text-align: center;
 }
 
-header li {
+.desktop-nav li {
     display: inline-block;
     margin-left: 40px;
 }
 
-header a,
-header a:visited {
+.desktop-nav a,
+.desktop-nav a:visited {
     color: white;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
 
-header a:hover,
-header a:focus,
-header a:active {
+.desktop-nav a:hover,
+.desktop-nav a:focus,
+.desktop-nav a:active {
     opacity: 0.9;
     text-decoration: none;
     color: white;
@@ -87,6 +90,10 @@ header a:active {
     float: left;
 }
 
+
+/***********
+Mobile nav
+***********/
 .mobile-nav {
     display: none;
     text-align: center;
@@ -101,6 +108,8 @@ header a:active {
     width: 40px;
     display: inline-block;
     margin-left: -4px;
+    vertical-align: top;
+    margin-top: 8px;
 }
 
 .mobile-nav .logo-container {
@@ -125,31 +134,49 @@ header a:active {
     }
 }
 
+/***********
+Hero Styles
+***********/
 .hero {
     height: 400px;
     background: #e01e3c;
 }
 
+/**************
+Product Lineup
+**************/
 .product-lineup-container {
     height: 400px;
     background: #999;
 }
 
+/*****************
+Product container
+*****************/
 .featured-product-container {
     height: 400px;
     background: #666;
 }
 
+/***************
+Product support
+***************/
 .product-support-container {
     height: 400px;
     background: #222;
 }
 
+/********************
+Subscription section
+********************/
 .subscription-container {
     height: 400px;
     background: #777;
 }
 
+/******
+Footer
+******/
 footer {
     height: 400px;
     background: #555;
